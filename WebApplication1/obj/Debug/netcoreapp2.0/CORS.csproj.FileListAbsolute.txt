@@ -1,0 +1,11 @@
+E:\WebSite\CORS\WebApplication1\bin\Debug\netcoreapp2.0\CORS.deps.json
+E:\WebSite\CORS\WebApplication1\bin\Debug\netcoreapp2.0\CORS.runtimeconfig.json
+E:\WebSite\CORS\WebApplication1\bin\Debug\netcoreapp2.0\CORS.runtimeconfig.dev.json
+E:\WebSite\CORS\WebApplication1\bin\Debug\netcoreapp2.0\CORS.dll
+E:\WebSite\CORS\WebApplication1\bin\Debug\netcoreapp2.0\CORS.pdb
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.csprojResolveAssemblyReference.cache
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.csproj.CoreCompileInputs.cache
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.AssemblyInfoInputs.cache
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.AssemblyInfo.cs
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.dll
+E:\WebSite\CORS\WebApplication1\obj\Debug\netcoreapp2.0\CORS.pdb

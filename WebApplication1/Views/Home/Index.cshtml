@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<p>
+    <button id="send">Send to iframe</button>
+</p>
+
+<div id="message-iframe"></div>
+
+<iframe id="receiver" src="http://test-mari.bitballoon.com/" width="100%" height="600">google iframe</iframe>
+<script>
+    window.onload = function () {
+        var receiver = document.getElementById('receiver').contentWindow;
+
+        var btn = document.getElementById('send');
+
+        function sendMessage(e) {
+            e.preventDefault();
+            receiver.postMessage('Hello!', '*');
+        }
+
+        btn.addEventListener('click', sendMessage);
+
+        var mess = document.getElementById('message-iframe');
+        function receiveMessageFromFrame(e) {
+            if (e.origin !== "http://test-mari.bitballoon.com")
+                return;
+            mess.innerHTML = "Message Received: " + e.data;
+        }
+        window.addEventListener('message', receiveMessageFromFrame);
+    }
+</script>  
+
+ 
+ 
