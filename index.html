@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+	<h1>Receiver Window</h1>
+	<div id="message"></div>
+	<button>Send to parent</button>
+
+	<script>
+	window.onload = function() {
+
+	var messageEle = document.getElementById('message');
+	function receiveMessage(e) {
+		if (e.origin !== "http://localhost:62825")
+			return;
+		messageEle.innerHTML = "Message Received: " + e.data;
+	}
+	window.addEventListener('message', receiveMessage);
+}
+	</script>
+	
+<script>
+	document.querySelector('button').onclick = function () {
+		parent.postMessage("Hello dad", "*")
+	};
+</script>
+</body>
+</html>
